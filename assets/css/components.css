@@ -134,6 +134,7 @@
 
 .hero-title {
   font-size: var(--fs-display-xl);
+  line-height: 1.22;
   display: flex;
   flex-direction: column;
   align-items: center;
