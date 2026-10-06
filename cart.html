@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart | The Lane Company 2</title>
+<meta name="description" content="Review your Lane Company 2 cart — adjust quantities, remove items, and see your subtotal before reaching out to complete your order.">
+<link rel="canonical" href="cart.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Your Cart | The Lane Company 2">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/css/reset.css">
+<link rel="stylesheet" href="assets/css/variables.css">
+<link rel="stylesheet" href="assets/css/global.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/animations.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="preloader is-loading" aria-hidden="true">
+  <svg viewBox="0 0 48 48" width="56" height="56"><circle cx="24" cy="24" r="20.5" fill="none" stroke="#c9a768" stroke-width="1"/><path d="M17.5 15 V31.5 H30.5" fill="none" stroke="#f6ecd2" stroke-width="2.3" stroke-linecap="square" stroke-linejoin="miter"/><path d="M15 15 H20.5" stroke="#f6ecd2" stroke-width="2.3" stroke-linecap="square"/><circle cx="31" cy="17.5" r="2.2" fill="#c9a768"/></svg>
+  <div class="preloader-bar"></div>
+  <span class="preloader-label">The Lane Company 2</span>
+</div>
+<div class="cursor-dot" aria-hidden="true"></div>
+<div class="scroll-progress" aria-hidden="true"></div>
+<div class="page-transition is-covering" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="header-brand" aria-label="The Lane Company 2 — Home">
+      <svg viewBox="0 0 48 48"><rect width="48" height="48" rx="24" fill="#080b16"/><circle cx="24" cy="24" r="20.5" fill="none" stroke="#c9a768" stroke-width="1"/><path d="M17.5 15 V31.5 H30.5" fill="none" stroke="#f6ecd2" stroke-width="2.3" stroke-linecap="square" stroke-linejoin="miter"/><path d="M15 15 H20.5" stroke="#f6ecd2" stroke-width="2.3" stroke-linecap="square"/><circle cx="31" cy="17.5" r="2.2" fill="#c9a768"/></svg>
+      <span class="brand-wordmark">The Lane Co.<small>Thoughtfully Chosen</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="shop.html">Shop</a>
+      <a href="toys.html">Toys</a>
+      <a href="new-arrivals.html">New Arrivals</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" type="button" data-search-open aria-label="Search products">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      </button>
+      <a href="cart.html" class="icon-btn" aria-label="View cart" aria-current="page">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16l-1.5 11.5a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 7Z"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg>
+        <span class="cart-count" data-cart-count>0</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileDrawer"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-drawer" id="mobileDrawer">
+  <nav class="mobile-drawer-nav" aria-label="Mobile primary">
+    <a href="shop.html">Shop</a>
+    <a href="toys.html">Toys</a>
+    <a href="new-arrivals.html">New Arrivals</a>
+    <a href="best-sellers.html">Best Sellers</a>
+    <a href="about.html">About</a>
+  </nav>
+  <div class="mobile-drawer-foot">
+    <a href="tel:+18132059280">(813) 205-9280</a>
+    <a href="mailto:alanlane66@gmail.com">alanlane66@gmail.com</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<div class="search-overlay">
+  <div class="search-panel">
+    <div class="search-field">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input type="search" placeholder="Search wooden toys, plush, puzzles…" aria-label="Search products">
+      <button type="button" class="search-close" data-search-close>Esc</button>
+    </div>
+    <div class="search-results" data-search-results></div>
+  </div>
+</div>
+
+<main id="main">
+  <div class="page-intro container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Cart</span></div>
+    <span class="eyebrow">Your Selection</span>
+    <h1 data-reveal="up">Your cart.</h1>
+  </div>
+
+  <section class="section-tight" data-cart-page>
+    <div class="container">
+      <div class="cart-layout">
+        <div>
+          <div class="cart-list" data-cart-list></div>
+
+          <div class="cart-empty" data-cart-empty style="display:none;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 7h16l-1.5 11.5a2 2 0 0 1-2 1.5H7.5a2 2 0 0 1-2-1.5L4 7Z"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/></svg>
+            <h3>Your cart is empty</h3>
+            <p class="lede" style="margin-inline:auto;margin-bottom:2rem;">Nothing here yet — but the collection is full of pieces worth a second look.</p>
+            <a href="shop.html" class="btn btn-primary"><span>Browse the Shop</span></a>
+          </div>
+        </div>
+
+        <aside class="cart-summary" data-cart-summary style="display:none;">
+          <h3 style="font-family:var(--font-display);font-size:1.3rem;margin-bottom:1.25rem;">Order Summary</h3>
+          <div class="summary-row"><span data-cart-item-count>0 items</span><span></span></div>
+          <div class="summary-row"><span>Subtotal</span><span data-cart-subtotal>$0</span></div>
+          <div class="summary-row"><span>Shipping</span><span>Calculated at follow-up</span></div>
+          <div class="summary-row total"><span>Estimated Total</span><span data-cart-total>$0</span></div>
+          <a href="contact.html" class="btn btn-primary" style="width:100%;margin-top:1.5rem;"><span>Request to Order</span></a>
+          <p class="field-hint" style="margin-top:1rem;">Online checkout isn't live yet. Submitting sends your request to our team — we'll follow up by phone or email to confirm your order and arrange payment.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head" data-reveal="up">
+        <div>
+          <span class="eyebrow">You Might Also Like</span>
+          <h2>Finish the collection.</h2>
+        </div>
+      </div>
+      <div class="product-grid" id="cartSuggestions"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-glow" aria-hidden="true"></div>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="header-brand">
+          <svg viewBox="0 0 48 48"><rect width="48" height="48" rx="24" fill="#080b16"/><circle cx="24" cy="24" r="20.5" fill="none" stroke="#c9a768" stroke-width="1"/><path d="M17.5 15 V31.5 H30.5" fill="none" stroke="#f6ecd2" stroke-width="2.3" stroke-linecap="square" stroke-linejoin="miter"/><path d="M15 15 H20.5" stroke="#f6ecd2" stroke-width="2.3" stroke-linecap="square"/><circle cx="31" cy="17.5" r="2.2" fill="#c9a768"/></svg>
+          <span class="brand-wordmark">The Lane Co.<small>Thoughtfully Chosen</small></span>
+        </a>
+        <p>A premium flagship for thoughtfully selected toys and giftable goods — toys first, with more to discover soon.</p>
+      </div>
+      <div class="footer-col"><h6>Shop</h6><ul><li><a href="shop.html">All Products</a></li><li><a href="toys.html">Toys</a></li><li><a href="new-arrivals.html">New Arrivals</a></li><li><a href="best-sellers.html">Best Sellers</a></li></ul></div>
+      <div class="footer-col"><h6>Company</h6><ul><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li><li><a href="cart.html">Cart</a></li></ul></div>
+      <div class="footer-col"><h6>Get in Touch</h6><ul><li><a href="tel:+18132059280">(813) 205-9280</a></li><li><a href="mailto:alanlane66@gmail.com">alanlane66@gmail.com</a></li></ul></div>
+    </div>
+    <span class="footer-wordmark" aria-hidden="true">Lane Co.</span>
+    <div class="footer-bottom">
+      <p>&copy; <span data-year></span> The Lane Company 2. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></div>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" data-toast>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m20 6-11 11-5-5"/></svg>
+  <span data-toast-message></span>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="assets/js/products.js"></script>
+<script src="assets/js/cart.js"></script>
+<script src="assets/js/navigation.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/animations.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    if (window.LaneCatalog) {
+      var all = LaneCatalog.getAll();
+      var sample = all.filter(function (p) { return p.badges.indexOf('bestseller') !== -1; }).slice(0, 4);
+      LaneCatalog.renderGrid(document.getElementById('cartSuggestions'), sample);
+      if (window.LaneMotion) LaneMotion.refresh();
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+/* ==========================================================================
+   The Lane Company 2 — Design Tokens
+   ========================================================================== */
+
+:root {
+  /* ---- Navy scale (deep luxury backgrounds, layered depth) ---- */
+  --navy-950: #05070d;
+  --navy-900: #080b16;
+  --navy-850: #0b0f1d;
+  --navy-800: #0f1526;
+  --navy-700: #151d33;
+  --navy-600: #1c2640;
+  --navy-500: #27335285;
+  --navy-500-solid: #273352;
+  --navy-400: #3a4a74;
+  --navy-300: #5c6f9e;
+
+  /* ---- Gold scale (restrained, metallic, never neon) ---- */
+  --gold-100: #f6ecd2;
+  --gold-200: #ead9ab;
+  --gold-300: #dcc385;
+  --gold-400: #c9a768;
+  --gold-500: #b3925a;
+  --gold-600: #8f7444;
+  --gold-700: #6b5733;
+
+  /* ---- Neutrals ---- */
+  --ivory: #f7f3ea;
+  --off-white: #efe9dc;
+  --fog: #a9aec1;
+  --fog-dim: #747c94;
+  --line: rgba(247, 243, 234, 0.12);
+  --line-strong: rgba(247, 243, 234, 0.22);
+
+  /* ---- Semantic ---- */
+  --bg: var(--navy-900);
+  --bg-elevated: var(--navy-800);
+  --bg-panel: var(--navy-700);
+  --text: var(--ivory);
+  --text-muted: var(--fog);
+  --accent: var(--gold-400);
+  --accent-soft: var(--gold-300);
+  --accent-deep: var(--gold-600);
+  --success: #7fae8e;
+  --danger: #c97b6b;
+
+  /* ---- Typography ---- */
+  --font-display: 'Fraunces', 'Times New Roman', serif;
+  --font-body: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --fs-display-xl: clamp(3.2rem, 9vw, 9rem);
+  --fs-display-lg: clamp(2.6rem, 6vw, 5.6rem);
+  --fs-display-md: clamp(2.1rem, 4.2vw, 3.6rem);
+  --fs-display-sm: clamp(1.6rem, 2.8vw, 2.4rem);
+  --fs-eyebrow: 0.78rem;
+  --fs-body-lg: 1.15rem;
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-micro: 0.72rem;
+
+  /* ---- Spacing scale ---- */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-sm: 1.25rem;
+  --space-md: 2rem;
+  --space-lg: 3.5rem;
+  --space-xl: 5.5rem;
+  --space-2xl: 8rem;
+  --space-3xl: 11rem;
+
+  /* ---- Layout ---- */
+  --container-max: 1440px;
+  --container-pad: clamp(1.25rem, 4vw, 4rem);
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 10px;
+  --header-h: 92px;
+  --header-h-scrolled: 72px;
+
+  /* ---- Motion ---- */
+  --ease-luxe: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out-soft: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-in-out-soft: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 0.25s;
+  --dur-med: 0.55s;
+  --dur-slow: 0.9s;
+
+  /* ---- Shadow / glow ---- */
+  --shadow-soft: 0 20px 60px -20px rgba(0, 0, 0, 0.55);
+  --shadow-lift: 0 30px 80px -24px rgba(0, 0, 0, 0.65);
+  --glow-gold: 0 0 40px -8px rgba(201, 167, 104, 0.35);
+
+  --z-nav: 500;
+  --z-drawer: 600;
+  --z-overlay: 700;
+  --z-toast: 800;
+}

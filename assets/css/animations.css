@@ -1,0 +1,72 @@
+/* ==========================================================================
+   Animation utility classes — paired with animations.js (GSAP ScrollTrigger)
+   All use transform/opacity only for performance.
+   ========================================================================== */
+
+[data-reveal] {
+  opacity: 0;
+  will-change: transform, opacity;
+}
+[data-reveal="up"] { transform: translateY(48px); }
+[data-reveal="fade"] { transform: none; }
+[data-reveal="scale"] { transform: scale(0.92); }
+[data-reveal="left"] { transform: translateX(-48px); }
+[data-reveal="right"] { transform: translateX(48px); }
+
+.is-revealed[data-reveal] {
+  opacity: 1;
+  transform: none;
+}
+
+.mask-reveal {
+  position: relative;
+  overflow: hidden;
+}
+.mask-reveal img {
+  transform: scale(1.18);
+  will-change: transform;
+}
+
+.split-line {
+  overflow: hidden;
+  display: block;
+}
+.split-line > span {
+  display: inline-block;
+  will-change: transform;
+}
+
+/* Fallback (no-JS or reduced-motion): show everything */
+.no-js [data-reveal],
+html.reduced-motion [data-reveal] {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+.float-slow { animation: floatY 7s ease-in-out infinite; }
+.float-slower { animation: floatY 9.5s ease-in-out infinite; }
+
+@keyframes spinSlow {
+  to { transform: rotate(360deg); }
+}
+.spin-slow { animation: spinSlow 18s linear infinite; }
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-in-up { animation: fadeInUp 0.6s var(--ease-out-soft) forwards; }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal] { opacity: 1 !important; transform: none !important; }
+  .float-slow, .float-slower, .spin-slow { animation: none; }
+}
